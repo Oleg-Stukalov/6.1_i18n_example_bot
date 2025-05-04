@@ -1,14 +1,15 @@
-# English translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
+# English translations for i18n_example_bot.
+# Copyright (C) 2025 AdvancedBotsCourse
+# This file is distributed under the same license as the i18n_example_bot
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-04 15:21+0200\n"
-"PO-Revision-Date: 2025-05-04 14:47+0200\n"
+"Project-Id-Version: i18n_example_bot 0.1\n"
+"Report-Msgid-Bugs-To: kms101@yandex.ru\n"
+"POT-Creation-Date: 2025-05-04 16:06+0200\n"
+"PO-Revision-Date: 2025-05-04 16:10+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
@@ -22,16 +23,30 @@ msgstr ""
 msgid "Данный тип апдейтов не поддерживается методом send_copy"
 msgstr "This type of update is not supported by the send_copy method"
 
-#: handlers/user.py:21
-msgid "Кнопка"
-msgstr "Button"
+#: handlers/user.py:19
+msgid "Добавить 1 товар"
+msgstr "Add 1 item"
 
-#: handlers/user.py:29
+#: handlers/user.py:23
+msgid "Добавить 3 товара"
+msgstr "Add 3 items"
+
+#: handlers/user.py:27
+msgid "Убрать 1 товар"
+msgstr "Remove 1 item"
+
+#: handlers/user.py:42
 #, python-brace-format
-msgid "Привет, {username}. Нажмите на кнопку"
-msgstr "Hello {username}. Click on the button"
+msgid ""
+"Привет, {username}.\n"
+"\n"
+"Добавьте товары в корзину"
+msgstr ""
+"Hello, {username}.\n"
+"\n"
+"Add items to cart"
 
-#: handlers/user.py:38
+#: handlers/user.py:52
 msgid ""
 "Это бот для демонстрации процесса интернационализации\n"
 "\n"
@@ -44,9 +59,28 @@ msgstr ""
 "\n"
 "Available commands:\n"
 "\n"
-"/start - restarting the bot\n"
+"/start - restart the bot\n"
 "/help - help with the bot"
 
-#: handlers/user.py:48
-msgid "Вы нажали на кнопку!"
-msgstr "You pressed the button!"
+#: handlers/user.py:66
+msgid "Вы удалили товар"
+msgstr "You have deleted an item"
+
+#: handlers/user.py:69 handlers/user.py:89
+#, python-brace-format
+msgid "В корзине {} товар"
+msgid_plural "В корзине {} товаров"
+msgstr[0] "There is {} item in the cart"
+msgstr[1] "There are {} items in the cart"
+
+#: handlers/user.py:73
+msgid "В корзине пусто"
+msgstr "Cart is empty"
+
+#: handlers/user.py:83
+msgid "Вы добавили товар"
+msgstr "You have added an item"
+
+#: handlers/user.py:86
+msgid "Вы добавили товары"
+msgstr "You have added items"

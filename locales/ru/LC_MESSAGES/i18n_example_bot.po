@@ -1,14 +1,15 @@
-# Russian translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
+# Russian translations for i18n_example_bot.
+# Copyright (C) 2025 AdvancedBotsCourse
+# This file is distributed under the same license as the i18n_example_bot
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-04 15:21+0200\n"
-"PO-Revision-Date: 2025-05-04 14:47+0200\n"
+"Project-Id-Version: i18n_example_bot 0.1\n"
+"Report-Msgid-Bugs-To: kms101@yandex.ru\n"
+"POT-Creation-Date: 2025-05-04 16:06+0200\n"
+"PO-Revision-Date: 2025-05-04 16:11+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -23,16 +24,30 @@ msgstr ""
 msgid "Данный тип апдейтов не поддерживается методом send_copy"
 msgstr "Данный тип апдейтов не поддерживается методом send_copy"
 
-#: handlers/user.py:21
-msgid "Кнопка"
-msgstr "Кнопка"
+#: handlers/user.py:19
+msgid "Добавить 1 товар"
+msgstr "Добавить 1 товар"
 
-#: handlers/user.py:29
+#: handlers/user.py:23
+msgid "Добавить 3 товара"
+msgstr "Добавить 3 товара"
+
+#: handlers/user.py:27
+msgid "Убрать 1 товар"
+msgstr "Убрать 1 товар"
+
+#: handlers/user.py:42
 #, python-brace-format
-msgid "Привет, {username}. Нажмите на кнопку"
-msgstr "Привет, {username}. Нажмите на кнопку"
+msgid ""
+"Привет, {username}.\n"
+"\n"
+"Добавьте товары в корзину"
+msgstr ""
+"Привет, {username}.\n"
+"\n"
+"Добавьте товары в корзину"
 
-#: handlers/user.py:38
+#: handlers/user.py:52
 msgid ""
 "Это бот для демонстрации процесса интернационализации\n"
 "\n"
@@ -41,13 +56,27 @@ msgid ""
 "/start - перезапуск бота\n"
 "/help - справка по работе бота"
 msgstr ""
-"Это бот для демонстрации процесса интернационализации\n"
-"\n"
-"Доступные команды:\n"
-"\n"
-"/start - перезапуск бота\n"
-"/help - справка по работе бота"
 
-#: handlers/user.py:48
-msgid "Вы нажали на кнопку!"
-msgstr "Вы нажали на кнопку!"
+#: handlers/user.py:66
+msgid "Вы удалили товар"
+msgstr "Вы удалили товар"
+
+#: handlers/user.py:69 handlers/user.py:89
+#, python-brace-format
+msgid "В корзине {} товар"
+msgid_plural "В корзине {} товаров"
+msgstr[0] "В корзине {} товар"
+msgstr[1] "В корзине {} товара"
+msgstr[2] "В корзине {} товаров"
+
+#: handlers/user.py:73
+msgid "В корзине пусто"
+msgstr "В корзине пусто"
+
+#: handlers/user.py:83
+msgid "Вы добавили товар"
+msgstr "Вы добавили товар"
+
+#: handlers/user.py:86
+msgid "Вы добавили товары"
+msgstr "Вы добавили товары"

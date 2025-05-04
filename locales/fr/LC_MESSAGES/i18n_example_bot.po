@@ -1,14 +1,15 @@
-# French translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
+# French translations for i18n_example_bot.
+# Copyright (C) 2025 AdvancedBotsCourse
+# This file is distributed under the same license as the i18n_example_bot
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-04 15:21+0200\n"
-"PO-Revision-Date: 2025-05-04 14:47+0200\n"
+"Project-Id-Version: i18n_example_bot 0.1\n"
+"Report-Msgid-Bugs-To: kms101@yandex.ru\n"
+"POT-Creation-Date: 2025-05-04 16:06+0200\n"
+"PO-Revision-Date: 2025-05-04 16:11+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -22,16 +23,30 @@ msgstr ""
 msgid "Данный тип апдейтов не поддерживается методом send_copy"
 msgstr "Ce type de mise à jour n'est pas supporté par la méthode send_copy"
 
-#: handlers/user.py:21
-msgid "Кнопка"
-msgstr "Bouton"
+#: handlers/user.py:19
+msgid "Добавить 1 товар"
+msgstr "Ajouter 1 produit"
 
-#: handlers/user.py:29
+#: handlers/user.py:23
+msgid "Добавить 3 товара"
+msgstr "Ajouter 3 produits"
+
+#: handlers/user.py:27
+msgid "Убрать 1 товар"
+msgstr "Supprimer 1 produit"
+
+#: handlers/user.py:42
 #, python-brace-format
-msgid "Привет, {username}. Нажмите на кнопку"
-msgstr "Bonjour {username}. Cliquez sur le bouton"
+msgid ""
+"Привет, {username}.\n"
+"\n"
+"Добавьте товары в корзину"
+msgstr ""
+"Bonjour {username}.\n"
+"\n"
+"Ajouter des articles au panier"
 
-#: handlers/user.py:38
+#: handlers/user.py:52
 msgid ""
 "Это бот для демонстрации процесса интернационализации\n"
 "\n"
@@ -42,11 +57,30 @@ msgid ""
 msgstr ""
 "Ceci est un bot pour démontrer le processus d'internationalisation\n"
 "\n"
-"Commandes disponibles:\n"
+"Commandes disponibles :\n"
 "\n"
-"/start - redémarrer le bot\n"
-"/help - aide sur le fonctionnement du bot"
+"/start - redémarre le bot\n"
+"/help - aide avec le bot"
 
-#: handlers/user.py:48
-msgid "Вы нажали на кнопку!"
-msgstr "Vous avez appuyé sur le bouton!"
+#: handlers/user.py:66
+msgid "Вы удалили товар"
+msgstr "Vous avez supprimé le produit"
+
+#: handlers/user.py:69 handlers/user.py:89
+#, python-brace-format
+msgid "В корзине {} товар"
+msgid_plural "В корзине {} товаров"
+msgstr[0] "Il y a {} article dans le panier"
+msgstr[1] "Il y a {} articles dans votre panier"
+
+#: handlers/user.py:73
+msgid "В корзине пусто"
+msgstr "Le panier est vide"
+
+#: handlers/user.py:83
+msgid "Вы добавили товар"
+msgstr "Vous avez ajouté un produit"
+
+#: handlers/user.py:86
+msgid "Вы добавили товары"
+msgstr "Vous avez ajouté des produits"
