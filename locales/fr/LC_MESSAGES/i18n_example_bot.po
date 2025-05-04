@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-04 14:45+0200\n"
+"POT-Creation-Date: 2025-05-04 15:21+0200\n"
 "PO-Revision-Date: 2025-05-04 14:47+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -26,11 +26,27 @@ msgstr "Ce type de mise à jour n'est pas supporté par la méthode send_copy"
 msgid "Кнопка"
 msgstr "Bouton"
 
-#: handlers/user.py:28
+#: handlers/user.py:29
 #, python-brace-format
 msgid "Привет, {username}. Нажмите на кнопку"
 msgstr "Bonjour {username}. Cliquez sur le bouton"
 
-#: handlers/user.py:36
-msgid "Вы нажали на кнопку"
-msgstr "Vous avez appuyé sur le bouton"
+#: handlers/user.py:38
+msgid ""
+"Это бот для демонстрации процесса интернационализации\n"
+"\n"
+"Доступные команды:\n"
+"\n"
+"/start - перезапуск бота\n"
+"/help - справка по работе бота"
+msgstr ""
+"Ceci est un bot pour démontrer le processus d'internationalisation\n"
+"\n"
+"Commandes disponibles:\n"
+"\n"
+"/start - redémarrer le bot\n"
+"/help - aide sur le fonctionnement du bot"
+
+#: handlers/user.py:48
+msgid "Вы нажали на кнопку!"
+msgstr "Vous avez appuyé sur le bouton!"

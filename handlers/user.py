@@ -1,5 +1,5 @@
 from aiogram import F, Router, html
-from aiogram.filters import CommandStart
+from aiogram.filters import Command, CommandStart
 from aiogram.types import (
     CallbackQuery,
     InlineKeyboardButton,
@@ -23,6 +23,7 @@ async def process_start_command(message: Message):
     )
     # Создаем объект инлайн-клавиатуры
     markup = InlineKeyboardMarkup(inline_keyboard=[[button]])
+
     # Отправляем сообщение пользователю
     await message.answer(
         text=_('Привет, {username}. Нажмите на кнопку').format(username=username),
@@ -30,7 +31,18 @@ async def process_start_command(message: Message):
     )
 
 
+# Этот хэндлер срабатывает на команду /help
+@user_router.message(Command('help'))
+async def process_help_command(message: Message):
+    await message.answer(
+        text=_('Это бот для демонстрации процесса интернационализации\n\n'
+               'Доступные команды:\n\n'
+               '/start - перезапуск бота\n'
+               '/help - справка по работе бота')
+    )
+
+
 # Этот хэндлер срабатывает на нажатие инлайн-кнопки
 @user_router.callback_query(F.data == 'button_pressed')
 async def process_button_click(callback: CallbackQuery):
-    await callback.answer(text=_('Вы нажали на кнопку'))
+    await callback.answer(text=_('Вы нажали на кнопку!'))
